@@ -22,7 +22,7 @@ footer{
   width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
-  dsiplay: inline;
+  display: inline;
 }
 input[type="reset"] {
   display: block;
