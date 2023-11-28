@@ -5,6 +5,14 @@
   width: 50%;
 }
 
-h2 {
-    
+table,th,td {
+  border: 1px solid black;
+}
+
+#complex tr:nth-child(even) {
+  background-color: #777;
+  color: #fff; }
+
+footer{
+  margin-top: 20px;
 }
