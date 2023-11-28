@@ -16,3 +16,45 @@ table,th,td {
 footer{
   margin-top: 20px;
 }
+
+/* Tables*/
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  dsiplay: inline;
+}
+input[type="reset"] {
+  display: block;
+  width: 30%;
+  margin: 0.5em;
+  height: 1.5em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  color: white;
+}
+input[type="submit"] {
+  display: block;
+  width: 30%;
+  margin: 0.5em;
+  height: 1.5em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  color: white;
+}
+fieldset {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
