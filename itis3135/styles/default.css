@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Exo 2');
+* {
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  background-color: #7ccaac;
+  margin: 1em 3em;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+nav {
+  text-align: center;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -60,4 +77,8 @@ label {
 }
 .question{
   margin: 10px 0 0 0;
+}
+/* Website Evaluation */
+a {
+  color: white;
 }
