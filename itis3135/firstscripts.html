@@ -68,24 +68,6 @@
             <a href="https://www.linkedin.com/in/caden-clark-254289237/">LinkedIn</a>
         </nav>
         <p>Page Built by <a href="clarkenterprises.org">Clark Enterprises</a></p>
-        <script>
-             function updateValidationButtons() {
-                const currentPageURL = window.location.href;
-
-                // HTML Validator
-                const htmlValidatorLink = document.getElementById('htmlValidator');
-                if (htmlValidatorLink) {
-                    htmlValidatorLink.href = `https://validator.w3.org/nu/?doc=${encodeURIComponent(currentPageURL)}`;
-                }
-
-                // CSS Validator
-                const cssValidatorLink = document.getElementById('cssValidator');
-                if (cssValidatorLink) {
-                    cssValidatorLink.href = `https://jigsaw.w3.org/css-validator/validator?uri=${encodeURIComponent(currentPageURL)}&profile=css3svg`;
-                }
-            }
-            updateValidationButtons();
-        </script>
         <a id="htmlValidator" href="https://validator.w3.org/check?uri=referer">
             <img style="border:0;width:88px;height:31px"
             src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge.png" alt="Valid HTML!">
@@ -95,6 +77,24 @@
             src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
             CSS!">
             </a>
+            <script>
+                function updateValidationButtons() {
+                   const currentPageURL = window.location.href;
+   
+                   // HTML Validator
+                   const htmlValidatorLink = document.getElementById('htmlValidator');
+                   if (htmlValidatorLink) {
+                       htmlValidatorLink.href = `https://validator.w3.org/nu/?doc=${encodeURIComponent(currentPageURL)}`;
+                   }
+   
+                   // CSS Validator
+                   const cssValidatorLink = document.getElementById('cssValidator');
+                   if (cssValidatorLink) {
+                       cssValidatorLink.href = `https://jigsaw.w3.org/css-validator/validator?uri=${encodeURIComponent(currentPageURL)}&profile=css3svg`;
+                   }
+               }
+               updateValidationButtons();
+           </script>
     </footer>
     
 </body>
