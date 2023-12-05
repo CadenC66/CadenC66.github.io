@@ -82,3 +82,19 @@ label {
 a {
   color: white;
 }
+button {
+  display: block;
+  width: 13%;
+  margin: 0.5em;
+  height: 1.5em;
+  font-size: 1.1rem;
+  color: black;
+}
+#button2 {
+  display: inline;
+  width: 10%;
+  font-size: .9em;
+}
+#animalButton{
+  height: 3em;
+}

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caden Clark's Captivating Caribou || ITIS 3135 Website Evaluations</title>
+    <title>Caden Clark's Captivating Caribou || ITIS 3135 Introduction</title>
     <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts\defaultscripts.js"></script>
 </head>
 <body>
     <header>
@@ -30,29 +31,24 @@
             <a href="stuff/BOrinG StuFF😁.htm">CRAP Site</a>
         </nav>
     </header>
-    <main>
-        <h2>Website Evaluations</h2>
-        <section>
-        <h3><a href="https://www.amazon.com/">Amazon</a></h3>
-        <p>An online retailer that sells many different products.</p>
-        <ul>
-            <li>Contrast: Utilizes the same color scheme throughout where product images, prices, and buttons stand out distinctly against a neutral background.</li>
-            <li>Repetition: Uses consistent design elements throughout the site, specifically the search bar, nagivation menu, and logo. </li>
-            <li>Alignment: Elements are aligned neatly with a structured layout. The product listings are in a grid alignment.</li>
-            <li>Proximity: Related information such as product information and the "Add to Cart" button are placed in close proximity.</li>
-        </ul>
-        </section>
-        <section>
-            <h3><a href="https://www2.pnwx.com/">Pacific Northwest X-Ray Inc.</a></h3>
-            <p>An online catalog for an x-ray equipment company.</p>
-            <ul>
-                <li>Contrast: Very little contrast with the dark neon background behind black and yellow links, making it hard to read.</li>
-                <li>Repetition: Each product page is pretty consistent in layout, however some of the color choices seem random and don't fit with the rest of the page.</li>
-                <li>Alignment: A lot of the product pages have sections of text that aren't aligned with one another.</li>
-                <li>Proximity: The proximity of elements isn't horrible and the spacing of elements seems conistent.</li>
-            </ul>
-            </section>
-            
+    <main>        
+        <h2>First Scripts</h2>
+        <h3 id="dateTime"></h3>
+        <label for="name">What is your name?</label>
+        <input type="text" id="name">
+        <label for="feeling">How are you feeling?</label>
+        <input type="text" id="feeling">
+        <button onclick="nameFeeling()">Submit</button>
+        <h3 id="greeting"></h4>
+        <label for="number">Give me your favorite number (0-10)</label>
+        <input type="number" id="number" min="0" max="10">
+        <button id="button2" onclick="favNumber()">Submit</button>
+        <button onclick="dontPress()">DO NOT PRESS</button>
+        <button onclick="doPress()">PLEASE PRESS</button>
+        <button onclick="mySSN()">My SSN</button>
+        <button id="animalButton" onclick="bestAnimal()">Whats the best animal?</button>
+        
+
         
     </main>
     <footer>
@@ -72,11 +68,29 @@
             <a href="https://www.linkedin.com/in/caden-clark-254289237/">LinkedIn</a>
         </nav>
         <p>Page Built by <a href="clarkenterprises.org">Clark Enterprises</a></p>
-        <a href="https://validator.w3.org/check?uri=referer">
+        <script>
+             function updateValidationButtons() {
+                const currentPageURL = window.location.href;
+
+                // HTML Validator
+                const htmlValidatorLink = document.getElementById('htmlValidator');
+                if (htmlValidatorLink) {
+                    htmlValidatorLink.href = `https://validator.w3.org/nu/?doc=${encodeURIComponent(currentPageURL)}`;
+                }
+
+                // CSS Validator
+                const cssValidatorLink = document.getElementById('cssValidator');
+                if (cssValidatorLink) {
+                    cssValidatorLink.href = `https://jigsaw.w3.org/css-validator/validator?uri=${encodeURIComponent(currentPageURL)}&profile=css3svg`;
+                }
+            }
+            updateValidationButtons();
+        </script>
+        <a id="htmlValidator" href="https://validator.w3.org/check?uri=referer">
             <img style="border:0;width:88px;height:31px"
             src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge.png" alt="Valid HTML!">
             </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <a id="cssValidator" href="https://jigsaw.w3.org/css-validator/check/referer">
             <img style="border:0;width:88px;height:31px"
             src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
             CSS!">
