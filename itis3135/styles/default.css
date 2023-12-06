@@ -82,7 +82,7 @@ label {
 a {
   color: white;
 }
-button {
+#main_firstscript button {
   display: block;
   width: 13%;
   margin: 0.5em;
@@ -97,4 +97,13 @@ button {
 }
 #animalButton{
   height: 3em;
+}
+.intro-page img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.intro-page li {
+  margin-top: 5px;
 }
