@@ -12,7 +12,18 @@
     <title>Schedule - UNC Charlotte Poker Club</title>
 </head>
 <body>
-    <div data-include="../components/clientheader.html" aria-label="Header section"></div>
+    <header>
+        <h1>UNC Charlotte Poker Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section id="schedule" aria-label="Schedule and Upcoming Events section">
@@ -35,7 +46,25 @@
         </section>
     </main>
 
-    <div data-include="../components/clientfooter.html" aria-label="Footer section"></div>
+    <footer>
+        <p>Page Built by <a href="../clarkenterprises.org">Clark Enterprise</a>, Certified in <a href="https://freecodecamp.org/certification/CadenC66/responsive-web-design/">CSS</a>/<a href="https://www.freecodecamp.org/certification/CadenC66/javascript-algorithms-and-data-structures">JS</a></p>
+    <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer">
+        <img style="border:0;width:88px;height:31px"
+        src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge.png" alt="Valid HTML!">
+        </a>
+    <a id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+        src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+        CSS!">
+        </a>
+        <script>
+            function updateValidationButtons() {
+               document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+               document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            }
+           updateValidationButtons();
+       </script>
+    </footer>
 
     <script src="../scripts/client.js"></script>
     <script src="../scripts/include.js"></script>
