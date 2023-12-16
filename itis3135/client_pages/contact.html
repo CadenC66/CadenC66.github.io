@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/client.css">
+    <!-- Include jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include jQuery UI Library -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Include jQuery Validation Plugin -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+    <title>Contact - UNC Charlotte Poker Club</title>
+</head>
+<body>
+    <header>
+        <h1>UNC Charlotte Poker Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact or Questions</h2>
+            <p>Have a question or want to get in touch with us? Fill out the form below, and we'll get back to you as soon as possible.</p>
+
+            <form id="contactForm" action="" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="datepicker">Select Date:</label>
+                <input type="text" id="datepicker" name="datepicker" required>
+
+                <label for="question">Your Question:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Page Built by <a href="../clarkenterprises.org">Clark Enterprise</a>, Certified in <a href="https://freecodecamp.org/certification/CadenC66/responsive-web-design/">CSS</a>/<a href="https://www.freecodecamp.org/certification/CadenC66/javascript-algorithms-and-data-structures">JS</a></p>
+    <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer">
+        <img style="border:0;width:88px;height:31px"
+        src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge.png" alt="Valid HTML!">
+        </a>
+    <a id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+        src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+        CSS!">
+        </a>
+        <script>
+            function updateValidationButtons() {
+               document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+               document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            }
+           updateValidationButtons();
+       </script>
+    </footer>
+
+    <!-- Initialize jQuery Validation in client.js -->
+    <script src="../scripts/client.js"></script>
+
+    <script>
+        // Initialize jQuery UI Datepicker
+        $(document).ready(function() {
+            $('#datepicker').datepicker();
+        });
+    </script>
+</body>
+</html>

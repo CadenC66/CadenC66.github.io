@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/client.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+
+    <title>Schedule - UNC Charlotte Poker Club</title>
+</head>
+<body>
+    <header>
+        <h1>UNC Charlotte Poker Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="schedule">
+            <h2>Schedule/Upcoming Events</h2>
+
+            <p>Join us for our weekly meetings and exciting events! Here's what's coming up:</p>
+            <div id="calendar" style="width: 1000px;"></div>
+
+            <h3>Weekly Meetings</h3>
+            <p>We typically meet every <strong>Friday at 7:00 PM</strong> in the club room. It's a great opportunity to socialize, learn, and enjoy the game of poker with fellow club members.</p>
+
+            <h3>Next Meeting</h3>
+            <p>Our next regular meeting is scheduled for <strong>Friday, Febuary 10th, 2024 at 7:00 PM</strong>. Don't miss out!</p>
+
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Febuary 24th, 2024:</strong> Poker Tournament Night - Prepare for a thrilling evening of intense competition and fun!</li>
+                <li><strong>March 15th, 2024:</strong> Poker Strategy Workshop - Learn advanced strategies and techniques from experienced players.</li>
+                
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Page Built by <a href="../clarkenterprises.org">Clark Enterprise</a>, Certified in <a href="https://freecodecamp.org/certification/CadenC66/responsive-web-design/">CSS</a>/<a href="https://www.freecodecamp.org/certification/CadenC66/javascript-algorithms-and-data-structures">JS</a></p>
+    <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer">
+        <img style="border:0;width:88px;height:31px"
+        src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge.png" alt="Valid HTML!">
+        </a>
+    <a id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+        src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+        CSS!">
+        </a>
+        <script>
+            function updateValidationButtons() {
+               document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+               document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            }
+           updateValidationButtons();
+       </script>
+    </footer>
+
+    <script src="../scripts/client.js"></script>
+</body>
+</html>

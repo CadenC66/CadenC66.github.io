@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caden Clark's Captivating Caribou || ITIS 3135 Slideshow</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>        
+        <h2>Slideshow</h2>
+        <!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+        <img src="images/caribou.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+        <img src="images/aardvark.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+        <img src="images/donuts.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+        <img src="images/eagle.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+        <img src="images/napkin.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+        <img src="images/cabin.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+        <div class="numbertext">7 / 10</div>
+          <img src="images/lion.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 10</div>
+          <img src="images/astronaut.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 10</div>
+          <img src="images/rabbit.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">10 / 10</div>
+          <img src="images/kitten.jpg" style="width:100%">
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images/caribou.jpg" style="width:100%" onclick="currentSlide(1)" alt="Caribou">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/aardvark.jpg" style="width:100%" onclick="currentSlide(2)" alt="Aardvark">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/donuts.jpg" style="width:100%" onclick="currentSlide(3)" alt="Donuts">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/eagle.jpg" style="width:100%" onclick="currentSlide(4)" alt="Eagle">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/napkin.jpg" style="width:100%" onclick="currentSlide(5)" alt="Napkin">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/cabin.jpg" style="width:100%" onclick="currentSlide(6)" alt="Cabin">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/lion.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Lion">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/astronaut.jpg" style="width:100%" onclick="currentSlide(8)" alt="Astronaut">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/rabbit.jpg" style="width:100%" onclick="currentSlide(9)" alt="Rabbit">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/kitten.jpg" style="width:100%" onclick="currentSlide(10)" alt="Kitten">
+      </div>
+    </div>
+  </div>
+        
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>
