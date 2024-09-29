@@ -13,31 +13,38 @@
     <main>
         <h2>Activity #3 - HTML Form</h2>
         <h3>Website Information Form</h3>
-        <p id="description">Please enter information about your website</p>
+        <p id="description">Please enter information about your company</p>
         <fieldset>
             <form id="business-form" action="#">
               <label for="name" id="name-label">Name <input required id="name" type="text" placeholder="Enter name"></label>
               <label for="email" id="email-label">Email <input required id="email" type="email" placeholder="Enter email"></label>
               <label for="phone" id="phone-label">Phone Number <input required id="phone" type="number" placeholder="Enter phone number" min="10"></label>
-              <label for="dropdown">Which option best describes what you website is used for? 
+              <label for="dropdown">What is your expected budget for machinery? 
                 <select id="dropdown" name="dropdown">
-                  <option value="Personal">Personal</option>
-                  <option value="Business">Business</option>
-                  <option value="Other">Other</option>
+                  <option value="less-10k">Under $10,000</option>
+                  <option value="10k-50k">$10,000 - $50,000</option>
+                  <option value="50k-100k">$50,000 - $100,000</option>
+                  <option value="more-100k">Over $100,000</option>
                 </select> 
                 </label>
-                <p class="question">Do you currently have a website?</p>
+                <p class="question">Do you currently own any industrial machinery?</p>
                 <label for="yes" id="yes-label"><input class="inline" name="currently" id="yes" type="radio" value="yes" checked> Yes</label>
                 <label for="no" id="no-label"><input class="inline" name="currently" id="no" type="radio" value="no"> No</label>
-                <p class="question">Which of the following features are essential for your new website? (Check all that apply)</p>
-                <label for="e-commerce">
-                    <input class="inline" id="e-commerce" type="checkbox" value="e-commerce">  E-commerce Functionality
+                <p class="question">What types of machinery are you interested in? (Check all that apply)</p>
+                <label for="sawmills">
+                    <input class="inline" id="sawmills" type="checkbox" value="sawmills">  Sawmills
                 </label>
-                <label for="blog">
-                    <input class="inline" id="blog" type="checkbox" value="blog"> Blog/Content Management
+                <label for="log-splitters">
+                    <input class="inline" id="log-splitters" type="checkbox" value="log-splitters"> Log splitters
                 </label>
-                <label for="profile">
-                    <input class="inline" id="profile" type="checkbox" value="profile"> User Account/Profile Management
+                <label for="wood-chippers">
+                    <input class="inline" id="wood-chippers" type="checkbox" value="wood-chippers"> Wood chippers
+                </label>
+                <label for="debarkers">
+                    <input class="inline" id="debarkers" type="checkbox" value="debarkers"> Debarkers
+                </label>
+                <label for="other">
+                    <input class="inline" id="other" type="checkbox" value="other"> Other
                 </label>
                 <input type="reset" value="Reset" id="reset">
                 <input type="submit" value="Submit" id="submit">
