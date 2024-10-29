@@ -1,5 +1,5 @@
 function dateTimeDisplay(){
-    const dateTimeElement = document.getElementById("dateTime");
+    const dateTimeElement = document.getElementById("date-time");
     if (dateTimeElement) {
         const currentDate = new Date();
         const options = { 
@@ -23,7 +23,7 @@ function nameFeeling(){
     const nameValue = document.getElementById("name").value;
     const feelingValue =document.getElementById("feeling").value;
     const greetingElement = document.getElementById("greeting");
-    greetingElement.textContent = "Welcome "+nameValue+"! It's interesting that your feeling "+feelingValue+" today.";
+    greetingElement.textContent = "The Captivating Caribou welcomes you, "+nameValue+"! We're glad you are doing "+feelingValue+" !";
 }
 function favNumber(){
     const numberValue = document.getElementById("number").value;

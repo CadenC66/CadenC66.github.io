@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <title>Caden's Gym Hobby || ITIS 3135</title>
     <style>
         body {
@@ -119,12 +120,12 @@
     <header>
         <h1>Working Out</h1>
         <nav>
-                <a href="#home" id="homeLink">Home</a>
-                <a href="#about" id="aboutLink">About</a>
-                <a href="#schedule" id="scheduleLink">Schedule</a>
-                <a href="#where" id="whereLink">Where</a>
-                <a href="#how" id="howLink">How</a>
-                <a href="#why" id="whyLink">Why</a>
+                <a href="#home" id="homelink">Home</a>
+                <a href="#about" id="aboutlink">About</a>
+                <a href="#schedule" id="schedulelink">Schedule</a>
+                <a href="#where" id="wherelink">Where</a>
+                <a href="#how" id="howlink">How</a>
+                <a href="#why" id="whylink">Why</a>
         </nav>
     </header>
 
@@ -222,15 +223,12 @@
     <footer>
         
         <p>Page Built by <a href="../clarkenterprises.org">Clark Enterprises</a>, Certified in <a href="https://freecodecamp.org/certification/CadenC66/responsive-web-design/">Responsive Web Design</a> and <a href="https://www.freecodecamp.org/certification/CadenC66/javascript-algorithms-and-data-structures">JavaScript</a></p>
-        <a id="validation_link_html" href="https://validator.w3.org/check?uri=referer" style="text-decoration:none;">
-            <img style="border:0;width:88px;height:31px"
-            src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge.png" alt="Valid HTML!">
-            </a>
-        <a id="validation_link_css" href="https://jigsaw.w3.org/css-validator/check/referer" style="text-decoration:none;">
-            <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
-            CSS!">
-            </a>
+        <a id="validation-link-html" href="https://validator.w3.org/check?uri=referer" class="no-text-decoration">
+            <img class="validator-image" src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge.png" alt="Valid HTML!">
+        </a>
+        <a id="validation-link-css" href="https://jigsaw.w3.org/css-validator/check/referer" class="no-text-decoration">
+            <img class="validator-image" src="https://raw.githubusercontent.com/bradleytaunt/html5-valid-badge/master/html5-validator-badge.png" alt="Valid CSS!">
+        </a>
     </footer>
     <script>
         // Get all sections and set initial display
@@ -252,7 +250,7 @@
         const whySection = document.getElementById('why');
         whySection.style.display = 'none';
     
-        document.getElementById("homeLink").addEventListener("click", () => {
+        document.getElementById("homelink").addEventListener("click", () => {
             homeSection.style.display = 'block';
             aboutSection.style.display = 'none';
             scheduleSection.style.display = 'none';
@@ -261,7 +259,7 @@
             whySection.style.display = 'none';
         });
     
-        document.getElementById("aboutLink").addEventListener("click", () => {
+        document.getElementById("aboutlink").addEventListener("click", () => {
             homeSection.style.display = 'none';
             aboutSection.style.display = 'block';
             scheduleSection.style.display = 'none';
@@ -270,7 +268,7 @@
             whySection.style.display = 'none';
         });
     
-        document.getElementById("scheduleLink").addEventListener("click", () => {
+        document.getElementById("schedulelink").addEventListener("click", () => {
             homeSection.style.display = 'none';
             aboutSection.style.display = 'none';
             scheduleSection.style.display = 'block';
@@ -279,7 +277,7 @@
             whySection.style.display = 'none';
         });
     
-        document.getElementById("whereLink").addEventListener("click", () => {
+        document.getElementById("wherelink").addEventListener("click", () => {
             homeSection.style.display = 'none';
             aboutSection.style.display = 'none';
             scheduleSection.style.display = 'none';
@@ -288,7 +286,7 @@
             whySection.style.display = 'none';
         });
     
-        document.getElementById("howLink").addEventListener("click", () => {
+        document.getElementById("howlink").addEventListener("click", () => {
             homeSection.style.display = 'none';
             aboutSection.style.display = 'none';
             scheduleSection.style.display = 'none';
@@ -297,7 +295,7 @@
             whySection.style.display = 'none';
         });
     
-        document.getElementById("whyLink").addEventListener("click", () => {
+        document.getElementById("whylink").addEventListener("click", () => {
             homeSection.style.display = 'none';
             aboutSection.style.display = 'none';
             scheduleSection.style.display = 'none';
