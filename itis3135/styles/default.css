@@ -93,13 +93,16 @@ label {
 a {
   color: white;
 }
-#main_firstscript button {
+#main-firstscript button {
   display: block;
   width: 13%;
   margin: 0.5em;
   height: 1.5em;
   font-size: 1.1rem;
   color: black;
+}
+#main-firstscript img {
+  width: 50%;
 }
 #button2 {
   display: inline;
@@ -133,12 +136,21 @@ a {
 }
 
 
-@media screen and (min-width: 981px) and (max-width: 1400px) {
+@media screen and (min-width: 601px) and (max-width: 980px) {
   main {
     max-width: 90%;
   }
   img {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 600px) {
+  main {
+    max-width: 70%;
+  }
+  img {
+    width: 50%;
   }
 }
 
@@ -258,4 +270,18 @@ a {
 .active,
 .demo:hover {
   opacity: 1;
+}
+.intro-cap {
+  text-align: center;
+}
+
+/* Footer styling */
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.validator-image {
+  border: 0;
+  width: 88px;
+  height: 31px;
 }

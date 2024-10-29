@@ -23,13 +23,13 @@ function nameFeeling(){
     const nameValue = document.getElementById("name").value;
     const feelingValue =document.getElementById("feeling").value;
     const greetingElement = document.getElementById("greeting");
-    greetingElement.textContent = "Welcome "+nameValue+"! It's interesting that your feeling "+feelingValue+" today."
+    greetingElement.textContent = "Welcome "+nameValue+"! It's interesting that your feeling "+feelingValue+" today.";
 }
 function favNumber(){
     const numberValue = document.getElementById("number").value;
     let newNumber = Math.round(Math.abs(numberValue));
     let polygon;
-    switch(newNumber){
+    switch (newNumber){
         case 0: polygon = "Not a polygon"; break;
         case 1: polygon = "Henagon"; break;
         case 2: polygon = "Digon"; break;
